@@ -1,1 +1,61 @@
 /* ESTILOS DA PÁG. HOME */
+
+/* 1. CONTEÚDO */
+
+.home-conteudo {
+  padding: 60px 0px 0px 60px;
+  max-width: 500px;
+  gap: 22px;
+}
+
+.home-conteudo h1::before {
+  content: "Trabalho Prático";
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 400;
+}
+
+.home-conteudo h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.home-item-lista:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.home-item-lista {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 10px;
+  gap: 8px;
+  align-items: center;
+}
+
+.home-item-lista:hover {
+  border-left: 4px solid #2c3352;
+}
+
+.home-item-lista h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* 1.2 HOME CONTEUDO MOBILE */
+
+@media screen and (max-width: 750px) {
+  .home-conteudo {
+    padding: 80px 12px 0px 12px;
+  }
+
+  .home-conteudo h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-item-lista h4 {
+    font-size: 1rem;
+  }
+}
+
+/* 2. INTEGRANTES IMAGENS */
