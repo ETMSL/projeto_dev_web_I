@@ -1,0 +1,268 @@
+/* CSS RESET
+ESSE BLOCO DE CÓDIGO RESETA O ESTILO PADRÃO DO CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS BASE
+ESTILOS PARA COMPONENTES COMUNS: HEADER, FOOTER */
+
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 40px;
+  padding: 8px;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 2px 4px 0px rgba(87, 87, 87, 0.25);
+}
+
+.header-container {
+  display: flex;
+  width: 954px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.nav-marca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-titulo-desktop,
+.header-titulo-mobile {
+  font-size: 1.25rem;
+}
+
+.header-titulo-mobile,
+.btn-menu-mobile,
+.nav-icon-mobile {
+  display: none;
+}
+
+.nav-item,
+.nav-item-strong {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 8px;
+}
+
+.nav-item-strong {
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .header-titulo-desktop {
+    display: none;
+  }
+  .header-titulo-mobile {
+    display: inline;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 0 8px;
+    box-shadow: -2px 4px 4px 0px rgba(87, 87, 87, 0.25);
+    text-align: right;
+    gap: 16px;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .btn-menu-mobile,
+  .nav-icon-mobile {
+    display: inline;
+  }
+
+  .btn-menu-mobile {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
+
+main {
+  background-color: #fff;
+  width: 100%;
+  max-width: 954px;
+  margin: 64px auto 32px auto;
+  align-self: end;
+  min-height: calc(100vh - 64px - 32px);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-container {
+  width: 954px;
+  text-align: center;
+}

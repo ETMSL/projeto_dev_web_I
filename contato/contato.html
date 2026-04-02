@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./contato.css">
+    <link rel="icon" href="../assets/logo-etmsl.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="nav-marca">
+                <img class="logo" src="../assets/logo-etmsl.png" alt="">
+                <span class="header-titulo-desktop"> Escola Técnica Municipal de Sete Lagoas</span> <!-- Desktop -->
+                <span class="header-titulo-mobile">ETMSL</span> <!-- Mobile -->
+            </div>
+            <nav>
+                <button class="btn-menu-mobile"><img class="nav-icon-mobile" src="../assets/burguer-menu.svg" alt=""></button> <!-- Mobile -->
+                <ul class="nav-list">
+                    <li><a class="nav-item" href="../index.html">Home</a></li>
+                    <li><a class="nav-item" href="../professor/professor.html">Professor</a></li>
+                    <li><a class="nav-item" href="./contato.html">Contato</a></li>
+                    <li><a class="nav-item-strong" href="https://etmsl.setelagoas.mg.gov.br/home.php" target="_blank">Página Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Formulário de Contato</h1>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <span>© 2026 ETMSL. Projeto disponível no </span>
+            <a href="https://github.com">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const btnMobile = document.querySelector('.btn-menu-mobile');
+        const navList = document.querySelector('.nav-list');
+
+        btnMobile.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
