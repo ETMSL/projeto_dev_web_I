@@ -1,11 +1,10 @@
 /* ESTILOS DA PÁG. PROFESSOR */
-
 .professor-title {
   font-size: 2rem;
   text-align: center;
   background-color: #f8f9fa;
   padding: 20px;
-}z
+}
 
 .professor-caracteristicas {
   padding: 100px 30px 0px 40px;
@@ -30,7 +29,7 @@
 }
 
 .professor-caracteristicas-item h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -58,8 +57,8 @@
 }
 
 .sobre-mim {
-    margin: 0 60px;
-    position: relative;
+  margin: 0 60px;
+  position: relative;
 }
 
 .sobre-mim h4 {
@@ -83,4 +82,46 @@
   border-radius: 24px;
   position: relative;
   z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-y: scroll;
+  }
+
+  .professor-title {
+    font-size: 1.5rem;
+  }
+
+  .professor-perfil {
+    width: 150px;
+    padding: 50px auto 30px auto;
+    justify-self: center;
+  }
+
+  .professor-perfil h2 {
+    font-size: 1.5rem;
+  }
+
+  .professor-perfil img {
+    justify-self: center;
+  }
+
+  .professor-caracteristicas {
+    grid-row: 2;
+    padding: 0 8px;
+    margin-bottom: 40px;
+  }
+
+  .professor-caracteristicas-item h4 {
+    font-size: 1rem;
+  }
+
+  .sobre-mim {
+    margin: 0 15px;
+  }
+
+  .sobre-mim p {
+    font-size: 1rem;
+  }
 }
