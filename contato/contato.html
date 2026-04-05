@@ -31,7 +31,63 @@
     </header>
 
     <main>
-        <h1>Formulário de Contato</h1>
+        <h1 class="contato-title">Entre em Contato</h1>
+
+        <div class="contato-container">
+            <div class="decorativo-azul">
+                <img src="../assets/detalhe-branco.svg" alt="Detalhe Branco">
+            </div>
+
+            <form class="contato-form" action="">
+                <div class="form-item">
+                    <p>Nome completo *</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div class="form-item">
+                    <p>E-mail *</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div class="form-item-select">
+                    <label>Cidade</label>
+                    <select class="form-input-select" name="cidade" id="cidade-select">
+                        <option value="Sete Lagoas">Sete Lagoas</option>
+                        <option value="Belo Horizonte">Belo Horizonte</option>
+                        <option value="Prudente de Morais" selected>Prudente de Morais</option>
+                        <option value="Inhaúma">Inhaúma</option>
+                    </select>
+
+                    <label>Estado</label>
+                    <select class="form-input-select" name="cidade" id="cidade-select">
+                        <option value="Minas Gerais">MG</option>
+                        <option value="Espírito Santo">ES</option>
+                        <option value="São Paulo" selected>SP</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <p>Idade</p>
+                    <input class="form-input" type="number">
+                </div>
+                <div class="form-item-radio">
+                    <p>Sexo *</p>
+                    <div class="item-radio-option">
+                        <input type="radio" id="masculino" name="genero" value="m">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="item-radio-option">
+                        <input type="radio" id="feminino" name="genero" value="f">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                </div>
+
+                <button class="form-button">
+                    ENVIAR
+                </button>
+            </form>
+
+        </div>
+
     </main>
 
     <footer>
