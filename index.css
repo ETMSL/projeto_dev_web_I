@@ -257,6 +257,7 @@ main {
   min-height: calc(100vh - 64px - 32px);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Footer */

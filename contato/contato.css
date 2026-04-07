@@ -71,7 +71,27 @@ select {
   background-size: 14px;
 }
 
-input {
+.form-item::after,
+.select-item::after,
+.form-item-radio::after {
+  content: var(--error-message); /* O segredo está aqui */
+  color: #d40000;
+  font-size: 0.8rem;
+  display: none; /* Escondido */
+  margin-top: 5px;
+}
+
+/* Quando houver a classe .error, exibimos o ::after e a borda */
+.form-item.error::after,
+.select-item.error::after,
+.form-item-radio.error::after {
+  display: block;
+}
+
+.form-item.error .form-input,
+.select-item.error .form-input-select,
+.form-item-radio.error input {
+  border: 2px solid #d40000;
 }
 
 .form-item p {
@@ -88,6 +108,12 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px 40px;
+}
+
+.select-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .form-input-select {
@@ -141,5 +167,11 @@ input {
 
   .form-item-select {
     gap: 8px 20px;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  html {
+    overflow-y: scroll;
   }
 }

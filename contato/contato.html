@@ -41,31 +41,37 @@
             <form class="contato-form" action="">
                 <div class="form-item">
                     <p>Nome completo *</p>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="text" required>
                 </div>
                 <div class="form-item">
                     <p>E-mail *</p>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="email" required>
                 </div>
                 <div class="form-item-select">
-                    <label>Cidade</label>
-                    <select class="form-input-select" name="cidade" id="cidade-select">
-                        <option value="Sete Lagoas">Sete Lagoas</option>
-                        <option value="Belo Horizonte">Belo Horizonte</option>
-                        <option value="Prudente de Morais" selected>Prudente de Morais</option>
-                        <option value="Inhaúma">Inhaúma</option>
-                    </select>
 
-                    <label>Estado</label>
-                    <select class="form-input-select" name="cidade" id="cidade-select">
-                        <option value="Minas Gerais">MG</option>
-                        <option value="Espírito Santo">ES</option>
-                        <option value="São Paulo" selected>SP</option>
-                        <option value="Rio de Janeiro">RJ</option>
-                    </select>
+                    <div class="select-item">
+                        <label>Cidade</label>
+                        <select class="form-input-select" name="cidade" id="cidade-select">
+                            <option value="Sete Lagoas">Sete Lagoas</option>
+                            <option value="Belo Horizonte">Belo Horizonte</option>
+                            <option value="Prudente de Morais">Prudente de Morais</option>
+                            <option value="Inhaúma">Inhaúma</option>
+                        </select>
+                    </div>
+
+                    <div class="select-item">
+                        <label>Estado</label>
+                        <select class="form-input-select" name="estado" id="estado-select">
+                            <option value="Minas Gerais">MG</option>
+                            <option value="Espírito Santo">ES</option>
+                            <option value="São Paulo">SP</option>
+                            <option value="Rio de Janeiro">RJ</option>
+                        </select>
+                    </div>
+
                 </div>
 
-                <div class="form-item">
+                <div class="form-item" id="form-item-idade">
                     <p>Idade</p>
                     <input class="form-input" type="number">
                 </div>
@@ -97,14 +103,8 @@
         </div>
     </footer>
 
-    <script>
-        const btnMobile = document.querySelector('.btn-menu-mobile');
-        const navList = document.querySelector('.nav-list');
-
-        btnMobile.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
-    </script>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/form_validacoes.js"></script>
 
 </body>
 

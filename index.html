@@ -32,22 +32,54 @@
   </header>
 
   <main>
-    <section class="home-conteudo">
-      <h1>HTML, CSS e JS do Grupo 5.</h1>
-      <ul class="home-conteudo-lista">
-        <li class="home-item-lista">
-          <img src="./assets/icn-disciplina.svg" alt="Ícone disciplina">
-          <h4>Este site está sendo desenvolvido como trabalho prático da disciplina Desenvolvimento WEB I.</h4>
-        </li>
-        <li class="home-item-lista">
-          <img src="assets/icn-endereco.svg" alt="Ícone local">
-          <h4>Desenvolvido na Escola Técnica Municipal de Sete Lagoas, no curso Técnico de Informática.</h4>
-        </li>
-        <li class="home-item-lista">
-          <img src="./assets/icn-ferramenta.svg" alt="Ícone linguagens">
-          <h4>Utilizando as tecnologias HTML, CSS e JavaScript.</h4>
-        </li>
-      </ul>
+    <section class="card">
+      <div class="home-conteudo">
+        <h1>HTML, CSS e JS do Grupo 5.</h1>
+        <ul class="home-conteudo-lista">
+          <li class="home-item-lista">
+            <img src="./assets/icn-disciplina.svg" alt="Ícone disciplina">
+            <h4>Este site está sendo desenvolvido como trabalho prático da disciplina Desenvolvimento WEB I.</h4>
+          </li>
+          <li class="home-item-lista">
+            <img src="assets/icn-endereco.svg" alt="Ícone local">
+            <h4>Desenvolvido na Escola Técnica Municipal de Sete Lagoas, no curso Técnico de Informática.</h4>
+          </li>
+          <li class="home-item-lista">
+            <img src="./assets/icn-ferramenta.svg" alt="Ícone linguagens">
+            <h4>Utilizando as tecnologias HTML, CSS e JavaScript.</h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="carrossel">
+      <h2>Integrantes</h2>
+      <div class="carrossel-wrapper">
+        <button class="prev"></button>
+        <div class="slides">
+          <figure>
+            <figcaption>Integrante 1</figcaption>
+            <img src="./assets/imagens-perfil/1.jpg" alt="Integrante 1">
+          </figure>
+          <figure>
+            <figcaption>Integrante 2</figcaption>
+            <img src="./assets/imagens-perfil/2.jpg" alt="Integrante 2">
+          </figure>
+          <figure>
+            <figcaption>Integrante 3</figcaption>
+            <img src="./assets/imagens-perfil/3.jpg" alt="Integrante 3">
+          </figure>
+          <figure>
+            <figcaption>Integrante 4</figcaption>
+            <img src="./assets/imagens-perfil/4.jpg" alt="Integrante 4">
+          </figure>
+          <figure>
+            <figcaption>Integrante 5</figcaption>
+            <img src=" ./assets/imagens-perfil/5.jpg" alt="Integrante 5">
+          </figure>
+        </div>
+        <button class="next"></button>
+      </div>
     </section>
 
   </main>
@@ -59,14 +91,8 @@
     </div>
   </footer>
 
-  <script>
-    const btnMobile = document.querySelector('.btn-menu-mobile');
-    const navList = document.querySelector('.nav-list');
-
-    btnMobile.addEventListener('click', () => {
-      navList.classList.toggle('active');
-    });
-  </script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/integrantes.js"></script>
 
 </body>
 
