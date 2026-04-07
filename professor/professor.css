@@ -1,1 +1,128 @@
 /* ESTILOS DA PÁG. PROFESSOR */
+
+.professor-title {
+  font-size: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.professor-caracteristicas {
+  padding: 100px 30px 0px 40px;
+  margin-bottom: 120px;
+  grid-row: 1;
+}
+
+.professor-caracteristicas-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  padding: 10px;
+  align-items: center;
+}
+
+.professor-caracteristicas-item:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.professor-caracteristicas-item:hover {
+  border-left: 4px solid #2c3352;
+}
+
+.professor-caracteristicas-item h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.professor-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.professor-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 40px 60px;
+  gap: 12px;
+}
+
+.professor-perfil h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.professor-perfil img {
+  max-width: 100%;
+}
+
+.sobre-mim {
+  margin: 0 60px;
+  position: relative;
+}
+
+.sobre-mim h4 {
+  font-size: 1rem;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border: 2px solid #2c3352;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0;
+  z-index: 2;
+}
+
+.sobre-mim p {
+  font-size: 1.5rem;
+  background-color: #f8f9fa;
+  padding: 40px 12px 40px 12px;
+  border: 2px solid #2c3352;
+  border-radius: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-y: scroll;
+  }
+
+  .professor-title {
+    font-size: 1.5rem;
+  }
+
+  .professor-perfil {
+    width: 150px;
+    padding: 50px auto 30px auto;
+    justify-self: center;
+  }
+
+  .professor-perfil h2 {
+    font-size: 1.5rem;
+  }
+
+  .professor-perfil img {
+    justify-self: center;
+  }
+
+  .professor-caracteristicas {
+    grid-row: 2;
+    padding: 0 8px;
+    margin-bottom: 40px;
+  }
+
+  .professor-caracteristicas-item h4 {
+    font-size: 1rem;
+  }
+
+  .sobre-mim {
+    margin: 0 15px;
+  }
+
+  .sobre-mim p {
+    font-size: 1rem;
+  }
+}
