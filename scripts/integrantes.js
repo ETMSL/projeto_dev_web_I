@@ -3,7 +3,7 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
 let scrollAmount = 0;
-const scrollStep = 194;
+const scrollStep = 388;
 
 next.addEventListener("click", () => {
   slides.scrollBy({ left: scrollStep, behavior: "smooth" });
