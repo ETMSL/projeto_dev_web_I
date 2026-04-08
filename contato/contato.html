@@ -41,11 +41,11 @@
             <form class="contato-form" action="">
                 <div class="form-item">
                     <p>Nome completo *</p>
-                    <input class="form-input" type="text" required>
+                    <input id="input-nome" class="form-input" type="text" oninput="resetarEstilosInput(this)">
                 </div>
                 <div class="form-item">
                     <p>E-mail *</p>
-                    <input class="form-input" type="email" required>
+                    <input id="input-email" class="form-input" type="email" oninput="resetarEstilosInput(this)">
                 </div>
                 <div class="form-item-select">
 
@@ -78,11 +78,11 @@
                 <div class="form-item-radio">
                     <p>Sexo *</p>
                     <div class="item-radio-option">
-                        <input type="radio" id="masculino" name="genero" value="m">
+                        <input oninput=resetarEstilosInput(this) type="radio" id="masculino" name="genero" value="m">
                         <label for="masculino">Masculino</label>
                     </div>
                     <div class="item-radio-option">
-                        <input type="radio" id="feminino" name="genero" value="f">
+                        <input oninput=resetarEstilosInput(this) type="radio" id="feminino" name="genero" value="f">
                         <label for="feminino">Feminino</label>
                     </div>
                 </div>
