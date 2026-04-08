@@ -1,3 +1,14 @@
+function resetarEstilosInput(inputElement) {
+  const container = inputElement.closest(
+    ".form-item, .select-item, .form-item-radio",
+  );
+
+  if (container) {
+    container.classList.remove("error");
+    container.style.removeProperty("--error-message");
+  }
+}
+
 const form = document.querySelector(".contato-form");
 
 form.addEventListener("submit", (event) => {
@@ -8,7 +19,7 @@ form.addEventListener("submit", (event) => {
   });
 
   const requiredInputs = form.querySelectorAll(
-    "input[required], select[required]",
+    "input[id='input-nome'], input[id='input-email']",
   );
   requiredInputs.forEach((input) => {
     if (!input.value.trim()) {
