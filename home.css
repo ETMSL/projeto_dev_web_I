@@ -44,7 +44,7 @@
 /* 1.2 HOME CONTEUDO MOBILE */
 @media screen and (max-width: 750px) {
   .home-conteudo {
-    padding: 80px 12px 80px 12px;
+    padding: 0 20px;
   }
 
   .home-conteudo h1 {
