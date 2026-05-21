@@ -46,7 +46,12 @@ form.addEventListener("submit", (event) => {
   if (!isValid) {
     event.preventDefault();
   } else {
-    console.log("Formulário válido! Enviando...");
+    var nome = document.getElementById("input-nome").value;
+    var email = document.getElementById("input-email").value;
+    const urlBase = "https://wa.me/5531995326439";
+
+    var url = `${urlBase}?text=Olá! Meu nome é ${nome}, estou entrando em contato sobre o trabalho apresentado. E-mail: ${email}`;
+    window.open(url, "_blank");
   }
 });
 

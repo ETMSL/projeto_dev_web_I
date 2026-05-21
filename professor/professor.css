@@ -1,5 +1,9 @@
 /* ESTILOS DA PÁG. PROFESSOR */
 
+html {
+  overflow-y: scroll;
+}
+
 .professor-title {
   font-size: 2rem;
   text-align: center;
@@ -76,7 +80,7 @@
 }
 
 .sobre-mim p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: #f8f9fa;
   padding: 40px 12px 40px 12px;
   border: 2px solid #2c3352;
@@ -86,10 +90,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  html {
-    overflow-y: scroll;
-  }
-
   .professor-title {
     font-size: 1.5rem;
   }
